@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
 
     <!-- Navigation -->
     <header>
@@ -22,6 +26,8 @@
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="#Blogs">Blogs</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -37,7 +43,7 @@
             <p class="subtitle fade-in">
                 <span class="role">Software Engineer</span>
                 <span class="separator">·</span>
-                <span class="role">AI/ML Learner</span>
+                <span class="role">AI/ML Enthusiast</span>
                 <span class="separator">·</span>
                 <span class="role">Consultant</span>
             </p>
@@ -46,7 +52,7 @@
                     <i class="fas fa-code"></i>
                     <span>View Projects</span>
                 </a>
-                <a href="#contact" class="btn secondary hover-effect">
+                <a href="mailto:abhinav.sethi@iiml.org" class="btn secondary hover-effect">
                     <i class="fas fa-envelope"></i>
                     <span>Get in Touch</span>
                 </a>
@@ -58,16 +64,27 @@
     <section id="about" class="about">
         <div class="about-content">
             <h2>About Me</h2>
-            <p>I'm Abhinav Sethi, an IT professional with 8+ years of experience in Software Development, Project Management, and AI/ML. I’ve worked with technologies ranging from React Native and Python to Machine Learning frameworks. I'm also an MBA from IIM Lucknow and passionate about teaching and coaching students.</p>
+            <p>I’m Abhinav Sethi, an experienced IT professional with over 8 years of expertise spanning software development, Project & Product management, and AI/ML engineering. With a strong technical foundation and a strategic mindset shaped by my MBA from IIM Lucknow, I specialize in delivering high-quality technology solutions that are not only efficient but also aligned with business goals.
+
+                Throughout my career, I’ve worked across diverse technology stacks and various machine learning frameworks — to build, test, and optimize scalable digital products. My work has ranged from desktop and web applications to machine learning pipelines and predictive models.
+                
+                I created this website with a clear purpose: to connect with businesses, teams, and individuals who need support in technology consulting, freelance software testing, applied research, or technical coaching. Whether you're a startup looking to refine your MVP, a student needing guidance, or a team requiring technical insight or QA expertise — I’m here to help.
+                
+                If you're looking for someone who combines technical depth with real-world business understanding, let's talk. 
+            
+            </p>
             
             <h3>Key Skills</h3>
             <div class="skill-tags">
+                <span>Software Testing</span>
+                <span>Product Management</span>
+                <span>AI/ML</span>
+                <span>Data Science</span>
                 <span>Python</span>
-                <span>React Native</span>
-                <span>Swift</span>
-                <span>Machine Learning</span>
-                <span>SQL</span>
-                <span>Project Management</span>
+                <span>IT Consulting</span>
+                <span>Business Analysis</span>
+                <span>IT Project Delivery</span>
+                <span>IT Strategy</span>                
             </div>
         </div>
     </section>
@@ -77,17 +94,84 @@
         <h2>Selected Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <img src="placeholder.jpg" alt="Visa Approval Predictor" />
+                <img src="project-foodhub.jpg" alt="FoodHub" />
                 <div class="project-info">
-                    <h3>Visa Approval Predictor</h3>
-                    <p>Used classification models to predict visa approvals based on historical data. Addressed class imbalance and evaluated models thoroughly.</p>
+                    <h3>FoodHub</h3>
+                    <p>Perform an exploratory data analysis and provide actionable insights for a food aggregator company to get a fair idea about the demand of different restaurants and cuisines, which will help them enhance their customer experience and improve the business.</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Numpy</span>
+                        <span>Pandas</span>
+                        <span>Seaborn</span>
+                        <span>Univariate analysis</span>
+                        <span>Bivariate analysis</span>
+                        <span>Exploratory Data Analysis</span>
+                        <span>Business Recommendations</span>
+                    </div>
                     <div class="project-links">
-                        <a href="#" class="btn small">Live Demo</a>
-                        <a href="#" class="btn small secondary">GitHub</a>
+                        <a href="#" class="btn primary small">View Project</a>
+                        <a href="#" class="btn secondary small">View Github Code</a>
                     </div>
                 </div>
             </div>
-            <!-- Add more projects similarly -->
+            <div class="project-card">
+                <img src="project-loan.jpg" alt="Personal Loan Campaign" />
+                <div class="project-info">
+                    <h3>Personal Loan Campaign</h3>
+                    <p>This project leverages data analytics to optimize AllLife Bank's marketing strategy. We aim to predict liability customers' likelihood of purchasing personal loans and identify key customer attributes influencing loan adoption. By targeting the right customer segments, we can provide actionable insights to increase loan conversions and drive revenue growth.</p>
+                    <div class="tech-tags">
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                        <span>Data Visualization</span>
+                        <span>Sklearn</span>
+                        <span>EDA</span>
+                        <span>Linear Regression</span>
+                        <span>Decision Tree</span>
+                        <span>Clustering</span>
+                        <span>Regression</span>
+                        <span>Classification</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn primary small">View Project</a>
+                        <a href="#" class="btn secondary small">View Github Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project-easyvisa.jpg" alt="EasyVisa" />
+                <div class="project-info">
+                    <h3>EasyVisa</h3>
+                    <p>Analyze the data of Visa applicants, build a predictive model to facilitate the process of visa approvals, and based on important factors that significantly influence the Visa status recommend a suitable profile for the applicants for whom the visa should be certified or denied.</p>
+                    <div class="tech-tags">
+                        <span>EDA</span>
+                        <span>Data preprocessing</span>
+                        <span>Customer profiling</span>
+                        <span>Bagging and Boosting</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn primary small">View Project</a>
+                        <a href="#" class="btn secondary small">View Github Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project-renewind.jpg" alt="ReneWind" />
+                <div class="project-info">
+                    <h3>ReneWind</h3>
+                    <p>The project aims to create and improve classification models for ReneWind's wind turbine generator failures, enabling proactive maintenance and cost reduction. The models use sensor data to identify potential failures, minimizing false negatives and ensuring turbine repairs before breakdown. The final models are chosen based on their ability to accurately predict failures, providing insights and recommendations to improve maintenance strategies and cost efficiency in wind energy production.</p>
+                    <div class="tech-tags">
+                        <span>EDA</span>
+                        <span>Data Preprocessing</span>
+                        <span>Neural Networks</span>
+                        <span>Classification</span>
+                        <span>Activation Functions</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn primary small">View Project</a>
+                        <a href="#" class="btn secondary small">View Github Code</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -110,5 +194,33 @@
         <p>&copy; 2025 Abhinav Sethi. All rights reserved.</p>
     </footer>
 
+    <!-- Add this before closing body tag -->
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('i');
+        
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeIcon(savedTheme);
+        }
+        
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+        
+        // Update theme icon
+        function updateThemeIcon(theme) {
+            themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
+    </script>
 </body>
 </html>
